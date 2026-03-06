@@ -1,0 +1,91 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+hello_anchor = "93wTDro7hH46fq8EkZMvyf6xNahHPngbJFr5zNtnwELQ"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "/home/sarath/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[test]
+startup_wait = 200000
+
+[test.validator]
+# url = "https://api.mainnet-beta.solana.com"
+url = "https://ultra-small-violet.solana-mainnet.discover.quiknode.pro/364db9d48278daf82bdd98d435ab258111f93ea2/"
+
+# Port program.
+[[test.validator.clone]]
+address = "Port7uDYB3wk6GJAw4KT1WpTeMtSu9bTcChBHkX2LfR"
+
+# Port lending market
+[[test.validator.clone]]
+address = "6T4XxKerq744sSuj3jaoV6QiZ8acirf4TrPwQzHAoSy5"
+
+# USDC.
+[[test.validator.clone]]
+address = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+
+# USDC supply pubkey
+[[test.validator.clone]]
+address = "2xPnqU4bWhUSjZ74CibY63NrtkHHw5eKntsxf8dzwiid"
+
+# USDC Reserve
+[[test.validator.clone]]
+address = "DcENuKuYd6BWGhKfGr7eARxodqG12Bz1sN5WA8NwvLRx"
+
+# USDC liquidity fee receiver.
+[[test.validator.clone]]
+address = "2pb9va1fRPzvgxj5w2P2Sqq2a5SQpWMbBD5fMYTNSifp"
+
+# SOL.
+[[test.validator.clone]]
+address = "So11111111111111111111111111111111111111112"
+
+# SOL Liquidity supply.
+[[test.validator.clone]]
+address = "BLAFX12cDmsumyB6k3L6whJZqNqySaWeCmS5rVuzy3SS"
+
+# SOL Reserve id.
+[[test.validator.clone]]
+address = "X9ByyhmtQH3Wjku9N5obPy54DbVjZV7Z99TPJZ2rwcs"
+
+# SOL Reserve Liquidity fee receiver.
+[[test.validator.clone]]
+address = "GavAqyCFbgKXQzRNqPv1sr95shGcW7cSqLBK5Gd8r7zd"
+
+# Orca SOL_USDC pool.
+[[test.validator.clone]]
+address = "APDFRM3HMr8CAGXwKHiu2f5ePSpaiEJhaURwhsRrUUt9"
+
+
+####################################
+# Orca program
+[[test.validator.clone]]
+address = "9W959DqEETiGZocYWCQPaJ6sBmUzgfxXfqGeTEdp3aQP"
+
+# SOL.
+[[test.validator.clone]]
+address = "ANP74VNsHwSrq9uUSjiSNyNWvf6ZPrKTmE4gHoNd13Lg"
+
+# SOL.
+[[test.validator.clone]]
+address = "75HgnSvXbWKZBpZHveX68ZzAhDqMzNDS29X6BGLtxMo1"
+####################################
+
+
+
+
+
+
+
+
+
